@@ -12,8 +12,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/aosp_corfuq.mk
-
-COMMON_LUNCH_CHOICES += \
-    aosp_corfuq-eng \
-    aosp_corfuq-userdebug
+PRODUCT_MAKEFILES := $(wildcard device/motorola/targets/devices/corfuq/*.mk)
