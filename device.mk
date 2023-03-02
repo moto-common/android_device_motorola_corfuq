@@ -17,10 +17,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # Device path
 DEVICE_PATH := device/motorola/corfuq/rootdir
 
-# Kernel
-PRODUCT_COPY_FILES += \
-    device/motorola/corfuq-kernel/Image:kernel
-
 # Audio Configuration
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
