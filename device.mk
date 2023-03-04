@@ -17,9 +17,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # Device path
 DEVICE_PATH := device/motorola/corfuq/rootdir
 
-DEVICE_PACKAGE_OVERLAYS += \
-    device/motorola/corfuq/overlay
-
 # Kernel
 PRODUCT_COPY_FILES += \
     device/motorola/corfuq-kernel/Image:kernel
@@ -41,11 +38,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=420
-
-# Overlay
-PRODUCT_PACKAGES += \
-    corfuqFrameworkOverlay \
-    corfuqSystemUIOverlay
 
 # Fingerprint
 TARGET_USES_GOODIX_FINGERPRINT := true
