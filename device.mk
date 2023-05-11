@@ -34,6 +34,9 @@ PRODUCT_PACKAGES += \
 TARGET_USES_GOODIX_FINGERPRINT := true
 TARGET_USES_FPC_FINGERPRINT := true
 
+# Model
+PRODUCT_MODEL := moto g(71) 5g
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/sm4350-common/platform.mk)
 
